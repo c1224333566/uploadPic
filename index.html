@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+  <title>头像上传</title>
+  <link rel="stylesheet" href="scripts/css/jquery.jcrop.css" type="text/css">
+  <script src="scripts/jquery.js" type="text/javascript"></script>
+  <script src="scripts/jquery.ajaxfileupload.js" type="text/javascript"></script>
+  <script src="scripts/jquery.jcrop.js" type="text/javascript"></script>
+  <script src="scripts/avatarCutter.js" type="text/javascript"></script>
+  <body>
+    <p><input type="file" id="avatar" name="avatar"/></p>
+    <div style="display:none;overflow:hidden" id="div_avatar">
+      <div style="width:500px;height:500px;overflow:hidden;float:left;"id="picture-original"><img alt="" src=""/></div>
+      <div id="picture_200" style="float:left;margin-left:20px"></div>
+      <input type="hidden" id="x1" name="x1" value="0"/>
+      <input type="hidden" id="y1" name="y1" value="0"/>
+      <input type="hidden" id="cw" name="cw" value="0"/>
+      <input type="hidden" id="ch" name="ch" value="0"/>
+      <input type="hidden" id="imgsrc" name="imgsrc"/>
+      <input type="button" id="btnCrop" value="裁剪"/>
+    </div>
+  </body>
+</html>
